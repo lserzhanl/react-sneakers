@@ -118,6 +118,8 @@ header {
 }
 
 .drawer {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 420px;
   right: 0;
@@ -127,6 +129,7 @@ header {
   padding: 30px;
 
   .items {
+    flex: 1;
     overflow: auto;
     margin-bottom: 40px;
   }
@@ -138,7 +141,7 @@ header {
 
 .cartTotalBlock {
   ul {
-    margin-bottom: 40px !important;
+    // margin-bottom: 40px !important;
 
     li {
       display: flex;
@@ -227,14 +230,14 @@ header {
   b {
     font-size: 14px;
   }
+}
 
-  .removeBtn {
-    opacity: 0.5;
-    cursor: pointer;
-    transition: opacity 0.15s ease-in-out;
+.removeBtn {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.15s ease-in-out;
 
-    &:hover {
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
   }
 }
